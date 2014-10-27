@@ -1,12 +1,20 @@
-#!/opt/local/bin/perl
+#! /opt/OMNIperl/bin/perl
 
 use strict;
 use DBI;
 use DBD::Pg;
 
-my $dbname = 'brian';
-my $host = 'localhost';
-my $dbh = DBI->connect("dbi:Pg:dbname=$dbname;host=$host", "brian", "");
+my $dbname = '';
+my $host = '';
+my $username = '';
+my $password = '';
+
+if( !$dbname || !$host || !$username || !$password ) {
+    print "Please add your database credentials to the script.\n";
+    exit;
+}
+
+my $dbh = DBI->connect("dbi:Pg:dbname=$dbname;host=$host", $username, $password);
 
 # Turn off NOTICES for this demo so the output is cleaner
 my $quiet_notices_sth = $dbh->prepare("SET client_min_messages TO warning");
