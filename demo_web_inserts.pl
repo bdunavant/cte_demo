@@ -1,5 +1,5 @@
-#! /opt/local/bin/perl
-# /opt/OMNIperl/bin/perl
+#! /opt/OMNIperl/bin/perl
+# /opt/local/bin/perl
 
 use strict;
 use DBI;

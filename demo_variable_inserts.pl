@@ -1,5 +1,5 @@
-#! /opt/local/bin/perl
-# /opt/OMNIperl/bin/perl
+#! /opt/OMNIperl/bin/perl
+# /opt/local/bin/perl
 
 use strict;
 use DBI;
@@ -35,7 +35,7 @@ sub clear_tables {
 my ($name, $email) = ('Chauncy McWinkle', 'therealchauncymcwinkle@google.com');
 my ($userid, $addressid, $historyid, $start_time, $end_time);
 
-my $sets = 10000;
+my $sets = 100000;
 my $records = 2;
 
 while($records <= 10) {
