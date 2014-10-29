@@ -5,12 +5,12 @@ use strict;
 use DBI;
 use DBD::Pg;
 
-my $dbname = 'brian';
-my $host = 'localhost';
-my $username = 'brian';
+my $dbname = '';
+my $host = '';
+my $username = '';
 my $password = '';
 
-if( !$dbname || !$host || !$username ) {
+if( !$dbname || !$host || !$username || !$password) {
     print "Please add your database credentials to the script.\n";
     exit;
 }
