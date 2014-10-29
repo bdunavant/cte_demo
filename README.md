@@ -7,7 +7,6 @@ Create an instance using the OmniOS r151012 AMI and run the following:
 
     pkg set-publisher -g http://pkg.omniti.com/omniti-ms/ ms.omniti.com
     pkg set-publisher -g http://pkg.omniti.com/omniti-perl/ perl.omniti.com
-    pkg install omniti/perl/dbi
     pkg install omniti/perl/dbd-pg
     pkg install developer/versioning/git
     git clone https://github.com/bdunavant/cte_demo.git
