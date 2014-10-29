@@ -1,15 +1,16 @@
-#! /opt/OMNIperl/bin/perl
+#! /opt/local/bin/perl
+# /opt/OMNIperl/bin/perl
 
 use strict;
 use DBI;
 use DBD::Pg;
 
-my $dbname = '';
-my $host = '';
-my $username = '';
+my $dbname = 'brian';
+my $host = 'localhost';
+my $username = 'brian';
 my $password = '';
 
-if( !$dbname || !$host || !$username || !$password ) {
+if( !$dbname || !$host || !$username ) {
     print "Please add your database credentials to the script.\n";
     exit;
 }
